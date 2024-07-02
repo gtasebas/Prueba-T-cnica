@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "255400c1-e96f-4401-9bca-717149c8ca0f",
+		"name": "API Orden de Servicio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36652698"
+	},
+	"item": [
+		{
+			"name": "Solicitud 1: Crear Vehículo ABC123",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"placa\": \"ABC123\",\r\n    \"tipo_vehiculo\": \"Automóvil\",\r\n    \"kilometraje\": 50000,\r\n    \"estado\": \"activo\",\r\n    \"nombre_propietario\": \"Doctor Strange\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/vehiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vehiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solicitud 2: Crear Vehículo DEF456",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"placa\": \"DEF456\",\r\n    \"tipo_vehiculo\": \"Camión\",\r\n    \"kilometraje\": 15000,\r\n    \"estado\": \"activo\",\r\n    \"nombre_propietario\": \"Viuda negra\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/vehiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vehiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solicitud 3: Crear Vehículo AAA11H",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"placa\": \"AAA11H\",\r\n    \"tipo_vehiculo\": \"Moto\",\r\n    \"kilometraje\": 1500,\r\n    \"estado\": \"activo\",\r\n    \"nombre_propietario\": \"Thor\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/vehiculos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vehiculos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solicitud 4: Crear Orden 100001",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numero_orden\": 100001,\r\n    \"vehiculo_id\": 1,  // ID del vehículo 'ABC123'\r\n    \"tipo_orden\": \"Correctivo\",\r\n    \"fecha\": \"2024-06-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/ordenes-servicio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ordenes-servicio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solicitud 5: Crear Orden 100002",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numero_orden\": 100002,\r\n    \"vehiculo_id\": 2,  // ID del vehículo 'DEF456'\r\n    \"tipo_orden\": \"Preventivo\",\r\n    \"fecha\": \"2024-06-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/ordenes-servicio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ordenes-servicio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solicitud 6: Crear Orden 100003",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numero_orden\": 100003,\r\n    \"vehiculo_id\": 1,  // ID del vehículo 'ABC123'\r\n    \"tipo_orden\": \"Correctivo\",\r\n    \"fecha\": \"2024-06-04\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/ordenes-servicio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ordenes-servicio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solicitud 7: Crear Orden 100004",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numero_orden\": 100004,\r\n    \"vehiculo_id\": 3,  // ID del vehículo 'AAA11H'\r\n    \"tipo_orden\": \"Preventivo\",\r\n    \"fecha\": \"2024-06-12\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/ordenes-servicio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ordenes-servicio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solicitud 8: Añadir Ítem a Orden 100001 (Cambio de bujías)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orden_servicio_id\": 1,  // ID de la orden 100001\r\n    \"descripcion\": \"Cambio de bujías\",\r\n    \"cantidad\": 12,\r\n    \"valor_unitario\": 25000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/items-orden-servicio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"items-orden-servicio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solicitud 9: Añadir Ítem a Orden 100001 (Limpieza carter)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orden_servicio_id\": 1,  // ID de la orden 100001\r\n    \"descripcion\": \"Limpieza carter\",\r\n    \"cantidad\": 1,\r\n    \"valor_unitario\": 130000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/items-orden-servicio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"items-orden-servicio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solicitud 10: Añadir Ítem a Orden 100002 (Lavado de motor)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orden_servicio_id\": 2,  // ID de la orden 100002\r\n    \"descripcion\": \"Lavado de motor\",\r\n    \"cantidad\": 3,\r\n    \"valor_unitario\": 45000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/items-orden-servicio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"items-orden-servicio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Solicitud 11: Listar Órdenes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/reporte-ordenes?fecha=2024-06-01\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"reporte-ordenes"
+					],
+					"query": [
+						{
+							"key": "fecha",
+							"value": "2024-06-01\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
