@@ -18,7 +18,7 @@ jobs:
     - name: Set up PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '7.4.33'  # Actualiza a la versión de PHP requerida por tus dependencias
+        php-version: '8.1.29'  # Actualiza a la versión de PHP requerida por tus dependencias
 
     - name: Install dependencies
       run: composer install --no-ansi --no-interaction --no-progress --no-scripts --optimize-autoloader
